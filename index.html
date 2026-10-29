@@ -272,6 +272,7 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 font-mono">
+                <!-- TOP -->
                 <div class="poster-card p-6 relative group">
                     <div class="flex justify-between items-center text-xs text-gray-500 mb-6">
                         <span>SERIAL NO. 001</span>
@@ -293,6 +294,7 @@
                     </div>
                 </div>
 
+                <!-- JUNGLE -->
                 <div class="poster-card p-6 relative group">
                     <div class="flex justify-between items-center text-xs text-gray-500 mb-6">
                         <span>SERIAL NO. 002</span>
@@ -314,6 +316,7 @@
                     </div>
                 </div>
 
+                <!-- MID -->
                 <div class="poster-card p-6 relative group">
                     <div class="flex justify-between items-center text-xs text-gray-500 mb-6">
                         <span>SERIAL NO. 003</span>
@@ -335,6 +338,7 @@
                     </div>
                 </div>
 
+                <!-- ADC (ACTUALIZADO: KAEL) -->
                 <div class="poster-card p-6 relative group">
                     <div class="flex justify-between items-center text-xs text-gray-500 mb-6">
                         <span>SERIAL NO. 004</span>
@@ -342,20 +346,21 @@
                     </div>
                     <div class="mb-8">
                         <h3 class="font-display text-3xl font-bold text-white group-hover:text-poster-red transition-colors">KAEL</h3>
-                        <p class="text-xs text-gray-400 uppercase mt-1">Carlos Mendoza // 19 Y/O</p>
+                        <p class="text-xs text-gray-400 uppercase mt-1">Kael Hernández // 21 Y/O</p>
                     </div>
                     <div class="space-y-2 text-xs border-t border-white/10 pt-4">
                         <div class="flex justify-between text-gray-400">
                             <span>MAIN CHAMPS:</span>
-                            <span class="text-white">KAI'SA / VARUS</span>
+                            <span class="text-white">TALIYAH / TWITCH / EZREAL / KOG'MAW</span>
                         </div>
                         <div class="flex justify-between text-gray-400">
                             <span>PEAK RATING:</span>
-                            <span class="text-poster-red font-bold">980 LP</span>
+                            <span class="text-poster-red font-bold">MASTER 875 LP</span>
                         </div>
                     </div>
                 </div>
 
+                <!-- SUP -->
                 <div class="poster-card p-6 relative group">
                     <div class="flex justify-between items-center text-xs text-gray-500 mb-6">
                         <span>SERIAL NO. 005</span>
@@ -377,6 +382,7 @@
                     </div>
                 </div>
 
+                <!-- COACH -->
                 <div class="poster-card p-6 relative group border-thin-red">
                     <div class="flex justify-between items-center text-xs text-poster-red mb-6">
                         <span>SERIAL NO. 006</span>
@@ -401,7 +407,7 @@
         </div>
     </section>
 
-    <!-- FORMULARIO DE TRYOUTS (ENVÍO DIRECTO A DISCORD) -->
+    <!-- FORMULARIO DE TRYOUTS (FORMSPREE O ENVÍO DIRECTO) -->
     <section id="tryouts" class="py-24 bg-poster-dark relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-8">
             <div class="poster-card p-8 sm:p-12 border-thin-red relative">
@@ -415,15 +421,15 @@
                     </div>
                 </div>
 
-                <form id="tryout-form" onsubmit="handleFormSubmit(event)" class="space-y-6 font-mono text-xs">
+                <form id="tryout-form" action="https://formspree.io/f/AQUI_TU_FORM_ID" method="POST" onsubmit="handleFormSubmit(event)" class="space-y-6 font-mono text-xs">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-gray-400 uppercase mb-2">RIOT ID #TAG *</label>
-                            <input type="text" id="riot-id" required placeholder="PlayerOne#LAN" class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
+                            <input type="text" name="Riot_ID" required placeholder="PlayerOne#LAN" class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
                         </div>
                         <div>
                             <label class="block text-gray-400 uppercase mb-2">ROL PRINCIPAL *</label>
-                            <select id="role" required class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
+                            <select name="Rol_Principal" required class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
                                 <option value="">SELECCIONA ROL...</option>
                                 <option value="TOPLANE">TOPLANE</option>
                                 <option value="JUNGLE">JUNGLE</option>
@@ -437,22 +443,22 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-gray-400 uppercase mb-2">PEAK LP & SERVIDOR *</label>
-                            <input type="text" id="peak-lp" required placeholder="Ej: Challenger 800 LP (LAN)" class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
+                            <input type="text" name="Peak_LP_Servidor" required placeholder="Ej: Challenger 800 LP (LAN)" class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
                         </div>
                         <div>
                             <label class="block text-gray-400 uppercase mb-2">DISCORD TAG *</label>
-                            <input type="text" id="discord-tag" required placeholder="usuario#0000" class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
+                            <input type="text" name="Discord_Tag" required placeholder="usuario#0000" class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
                         </div>
                     </div>
 
                     <div>
                         <label class="block text-gray-400 uppercase mb-2">ENLACE OP.GG / PROFILE *</label>
-                        <input type="url" id="opgg" required placeholder="https://www.op.gg/summoners/lan/..." class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
+                        <input type="url" name="OPGG_Profile" required placeholder="https://www.op.gg/summoners/lan/..." class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors">
                     </div>
 
                     <div>
                         <label class="block text-gray-400 uppercase mb-2">EXPERIENCIA EN EQUIPOS PREVIOS</label>
-                        <textarea id="experience" rows="3" placeholder="Menciona torneos, ligas nacionales o escuadras pasadas..." class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors"></textarea>
+                        <textarea name="Experiencia_Previa" rows="3" placeholder="Menciona torneos, ligas nacionales o escuadras pasadas..." class="w-full bg-black border border-white/20 focus:border-poster-red px-4 py-3 text-white outline-none transition-colors"></textarea>
                     </div>
 
                     <button type="submit" id="submit-btn" class="w-full py-4 bg-poster-red text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">
@@ -461,7 +467,7 @@
                 </form>
 
                 <div id="form-msg" class="hidden mt-6 p-4 border border-poster-red bg-poster-red/10 text-center font-mono text-xs text-white">
-                    [ DOSSIER REGISTRADO CORRECTAMENTE ]<br>La postulación se envió al servidor de Discord de KORE. Te contactaremos pronto.
+                    [ DOSSIER REGISTRADO CORRECTAMENTE ]<br>La postulación fue enviada con éxito. Te contactaremos vía Discord.
                 </div>
             </div>
         </div>
@@ -484,48 +490,32 @@
         </div>
     </footer>
 
-    <!-- SCRIPT DE ENVÍO CON TU WEBHOOK -->
     <script>
         async function handleFormSubmit(e) {
             e.preventDefault();
-
-            // Tu URL de Webhook integrada
-            const webhookURL = "https://discord.com/api/webhooks/1565143360660840562/rpCcEEw2284HucOGU2_osZsnYa3QgBPCurfmNGF6oqcIPJLFz2cgTjhEh3PYa9Wz5VA9";
-
+            const form = e.target;
             const btn = document.getElementById('submit-btn');
+            
             btn.disabled = true;
             btn.innerText = "ENVIANDO...";
 
-            const contentText = 
-`**⚔️ NUEVA POSTULACIÓN A TRYOUTS // KORE**
---------------------------------------------------
-👤 **Riot ID:** ${document.getElementById('riot-id').value}
-🎮 **Rol Principal:** ${document.getElementById('role').value}
-📈 **Peak LP & Servidor:** ${document.getElementById('peak-lp').value}
-💬 **Discord Tag:** ${document.getElementById('discord-tag').value}
-🔗 **OP.GG Profile:** ${document.getElementById('opgg').value}
-📜 **Experiencia Previa:** ${document.getElementById('experience').value || "No especificada"}
---------------------------------------------------
-*KORE ACADEMY DIVISION // BLANK ESPORTS*`;
-
-            const formData = new FormData();
-            formData.append("username", "KORE Tryouts Bot");
-            formData.append("avatar_url", "https://i.imgur.com/tgiCAIv.png");
-            formData.append("content", contentText);
-
             try {
-                await fetch(webhookURL, {
-                    method: "POST",
-                    body: formData
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
                 });
 
-                const msg = document.getElementById('form-msg');
-                msg.classList.remove('hidden');
-                document.getElementById('tryout-form').reset();
-                setTimeout(() => { msg.classList.add('hidden'); }, 6000);
+                if (response.ok) {
+                    const msg = document.getElementById('form-msg');
+                    msg.classList.remove('hidden');
+                    form.reset();
+                    setTimeout(() => { msg.classList.add('hidden'); }, 6000);
+                } else {
+                    alert("Ocurrió un problema al enviar la postulación.");
+                }
             } catch (error) {
-                console.error("Error al enviar:", error);
-                alert("Ocurrió un problema al enviar la postulación a Discord.");
+                alert("Ocurrió un problema al enviar el formulario.");
             } finally {
                 btn.disabled = false;
                 btn.innerText = "ENVIAR DOSSIER A STAFF ↘";
